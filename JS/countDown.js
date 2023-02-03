@@ -19,3 +19,16 @@ document.getElementById('decrese').onclick = function () {
     }
     document.getElementById('display').innerHTML = count;
 }
+
+document.getElementById('range').onchange = function () {
+    var rang = document.getElementById('range').value;
+
+    var h = parseInt(rang);
+    var w = parseInt(rang);
+
+    document.getElementById('ball').style.height = h + "px";
+    document.getElementById('ball').style.width = w + "px";
+    document.getElementById('ball').innerHTML = rang;
+}
+
+
